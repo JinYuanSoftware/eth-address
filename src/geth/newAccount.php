@@ -10,8 +10,8 @@ class newAccount
         while($n > 0){
             $n -= 1;
             $password = $this->GetRandStr(8);
-            exec("chmod +x newAccount.sh",$rep);
-            exec("sh newAccount.sh $password",$rep);
+            exec("chmod +x /src/sh/newAccount.sh",$rep);
+            exec("sh /src/sh/newAccount.sh $password",$rep);
             var_dump($rep);
         }
 
