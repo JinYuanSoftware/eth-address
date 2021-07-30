@@ -1,0 +1,19 @@
+{
+    "name": "jinyuansoftware/geth-wallet",
+    "description": "geth auto make address",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "weizheng",
+            "email": "jsonwei@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "src\\geth\\":"src/geth"
+        }
+    }
+}
