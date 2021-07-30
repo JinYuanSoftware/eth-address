@@ -14,7 +14,7 @@ class newAccount
         while($num > 0){
             $num -= 1;
             $password = $this->GetRandStr(8);
-            $rep = $this->post($this->nodeUrl,$this->createDate("personal_newAccount",$password));
+            $rep = $this->post($this->nodeUrl,$this->createDate("personal_newAccount",[$password]));
             var_dump($rep);
         }
 
