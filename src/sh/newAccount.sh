@@ -1,5 +1,6 @@
 #!/bin/bash
 geth account new
 inputPassword = $1
-expect "password" {send "${inputPassword}"}
+expect "*password*"
+send "${inputPassword}\n"
 expect eof
